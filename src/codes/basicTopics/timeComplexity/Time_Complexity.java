@@ -1,5 +1,6 @@
-package timeComplexity;
+package src.codes.basicTopics.timeComplexity;
 
+// AS YOUR INPUT GOES, HOW YOUR TIME GROWS IS TIME COMPLEXITY
 
 
 // LINKS TO REFER

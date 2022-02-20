@@ -1,6 +1,6 @@
 package bitwiseOperators.lec_1;
 
-
+// https://stackoverflow.com/questions/8825840/what-is-the-difference-between-and-in-java
 // https://www.w3schools.com/java/java_operators.asp
 // https://www.geeksforgeeks.org/bitwise-operators-in-java/
 // https://java-programming.mooc.fi/part-1/5-calculating
@@ -10,6 +10,9 @@ public class Operators_Imp {
         // NOTE ==> Don't run all of them together as agar 11 hua toh next print me -- karke firse 10 hojayega and u will not understand concepts
     int x = 10;
 
+
+    // note that != aur =! me kya difference hai
+        // refer :-  https://stackoverflow.com/questions/8825840/what-is-the-difference-between-and-in-java
 
 // 1    // pehle 10 print kardeta, fir increment karta, toh niche agar sout(x) lagaya toh 11 print karega
 //        System.out.println(x++);

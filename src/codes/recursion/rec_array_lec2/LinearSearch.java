@@ -1,4 +1,4 @@
-package src.codes.recursion.array_rec_lec2;
+package src.codes.recursion.rec_array_lec2;
 
 public class LinearSearch {
     public static void main(String[] args) {
