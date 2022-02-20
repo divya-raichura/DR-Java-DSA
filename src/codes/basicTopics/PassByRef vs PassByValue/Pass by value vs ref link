@@ -1,0 +1,46 @@
+/////// JAVA IS PASS BY VALUE
+
+// 1st website is best
+
+// https://www.scaler.topics/topics/pass-by-value-and-call-by-reference-in-java/
+// https://www.educative.io/edpresso/pass-by-value-vs-pass-by-reference
+// https://www.cs.virginia.edu/~jh2jf/courses/cs2110/java-pass-by-value.html
+// https://medium.topics/beingcoders/is-java-pass-by-reference-or-pass-by-value-explained-afa1d54d0bb3
+// https://www.baeldung.topics/java-pass-by-value-or-pass-by-reference
+// https://www.infoworld.topics/article/3512039/does-java-pass-by-reference-or-pass-by-value.html#:~:text=%E2%80%9CPassing%20by%20value%E2%80%9D%20refers%20to,of%20the%20variable%20in%20memory.
+// https://www.w3schools.topics/java/java_data_types.asp
+// https://stackoverflow.topics/questions/40480/is-java-pass-by-reference-or-pass-by-value
+// https://www.softwaretestinghelp.com/java/java-pass-by-reference-and-pass-by-value/
+
+
+
+// objects matlab woh string, array, string builder and all
+// primitives matlab boolean, int, short, char and all
+
+/*
+“Passing by value” refers to passing a copy of the value.
+“Passing by reference” refers to passing the real reference
+ of the variable in memory.
+ Non-primitive data types are called reference types because they
+  refer to objects. (EXCEPT FOR STRING)
+*/
+
+
+// in below program, string and int remains same but arr changes, string
+is also like arr so it shud also change but it doesn't due to immutability
+
+public static void main(){
+String name = "divya";
+        int[] nums = {1, 2, 3, 4, 5};
+        int n = 1;
+        pass(name, nums, n);
+        System.out.println(name);
+        System.out.println(Arrays.toString(nums));
+        System.out.println(n);
+}
+
+static void pass(String name, int[] arr, int n) {
+        name = "kunal kushwaha";
+        arr[1] = 33;
+        n = 9879;
+    }

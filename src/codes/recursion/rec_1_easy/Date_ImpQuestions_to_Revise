@@ -1,0 +1,23 @@
+ recursion easy question lecture (lec2 of rec playlist)
+
+ started on - 15th feb
+ ended on   - 16th feb
+
+ imp questions :
+ 1- reverse
+ 2- count zeros
+ 3- n to 1 and reverse
+ 4- steps req to zero
+
+
+ wrote : -
+
+ if (n == 0) {
+ return n;
+ }
+
+ in three programs : -
+
+ 1- reverse
+ 2- count zeros
+ 3- steps req to zero
