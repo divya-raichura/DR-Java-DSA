@@ -15,10 +15,14 @@ public class BubbleSort {
         boolean swapped; // if arr was already sorted then also it checked for all 'i'
         // hence this boolean so that it will check for 1st 'i' and then end, and also for some array in which it gets
         // sorted at i=2; so that it doesn't need to check for further 'i'
+
         for (int i = 0; i < arr.length-1; i++) { // kk ne i<arr.length kiya tha
+
             // run the swap loop till < length-i
             swapped = false;
+
             for (int j = 1; j < arr.length - i; j++) { // or j <= arr.length - i - 1
+
                 // swap condition
                 if (arr[j] < arr[j - 1]) {
 //                    swap(arr, arr[j], arr[j - 1]); // NOT NEEDED

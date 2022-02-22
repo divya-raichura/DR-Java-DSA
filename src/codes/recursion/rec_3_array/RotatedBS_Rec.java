@@ -1,4 +1,4 @@
-package src.codes.recursion.rec_array_lec2;
+package src.codes.recursion.rec_3_array;
 
 public class RotatedBS_Rec {
     public static void main(String[] args) {
