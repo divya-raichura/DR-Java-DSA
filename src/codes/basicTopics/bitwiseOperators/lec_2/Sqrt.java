@@ -1,4 +1,4 @@
-package bitwiseOperators.lec_2;
+package src.codes.basicTopics.bitwiseOperators.lec_2;
 
 public class Sqrt {
     public static void main(String[] args) {

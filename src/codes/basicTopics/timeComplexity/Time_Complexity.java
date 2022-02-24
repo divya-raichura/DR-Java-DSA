@@ -4,12 +4,20 @@ package src.codes.basicTopics.timeComplexity;
 
 
 // LINKS TO REFER
+
+// best --> https://www.youtube.com/watch?v=Mo4vesaut8g
+
+
+// --> https://www.youtube.com/watch?v=D6xkbGLQesk
+// --> https://java2blog.com/introduction-to-complexity-of-algorithm/
+// --> https://www.baeldung.com/java-algorithm-complexity
+// --> https://stackoverflow.com/questions/16232629/what-is-time-complexity-and-how-to-find-it
 // --> (best) https://adrianmejia.com/how-to-find-time-complexity-of-an-algorithm-code-big-o-notation/
 // --> https://pages.cs.wisc.edu/~vernon/cs367/notes/3.COMPLEXITY.html
 // --> https://www.geeksforgeeks.org/analysis-of-algorithms-set-4-analysis-of-loops/
 // --> http://en.wikipedia.org/wiki/Big_O_notation
 // --> https://www.mygreatlearning.com/blog/why-is-time-complexity-essential/#:~:text=To%20elaborate%2C%20Time%20complexity%20measures,run%20that%20function%20each%20time.
-
+// --> https://www.javatpoint.com/post/time-complexity#:~:text=The%20time%20complexity%20of%20a,inner%20loop%20executes%201%20times.
 
 public class Time_Complexity {
     public static void main(String[] args) {
