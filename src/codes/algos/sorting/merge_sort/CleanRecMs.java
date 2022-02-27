@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class CleanRecMs {
     public static void main(String[] args) {
-        int[] arr = {6, 1, 23, 3, 0};
+        int[] arr = {8,4,5,1,3,2,6,7};
         arr = mergeSort(arr);
         System.out.println(Arrays.toString(arr));
     }
@@ -14,15 +14,16 @@ public class CleanRecMs {
             return arr;
         }
 
+
         int m = arr.length / 2;
 
         int[] left = mergeSort(Arrays.copyOfRange(arr, 0, m));
         int[] right = mergeSort(Arrays.copyOfRange(arr, m, arr.length));
-
         return mergeArr(left, right);
     }
 
     static int[] mergeArr(int[] first, int[] second) {
+
         int i = 0;
         int j = 0;
 

@@ -6,7 +6,7 @@ public class Sqrt {
         int p = 3; // precision value
 //        System.out.println(sqrt(4));
         System.out.println(sqrt(n, p));
-        System.out.println(sqrtForLoopChanged(n, p));
+//        System.out.println(sqrtForLoopChanged(n, p));
     }
 
 
@@ -28,12 +28,14 @@ public class Sqrt {
                 e = m - 1;
             } else {
                 s = m + 1;
-                root = e;
+                root = m;
             }
         }
         double increment = 0.1;
         for (int i = 0; i < p; i++) { // npt i <= p as we are taking from i = 0
-            while (root * root <= n) {
+            while (root * root <= n) { // <= and r = r-i  kyuki loop will stop when r^2>n
+                // but we want <= n hence when loop breaks it has sqrt more than n, and
+                // hence we do r=r-i
                 root = root + increment;
             }
             root = root - increment;
@@ -57,7 +59,7 @@ public class Sqrt {
                 e = m - 1;
             } else {
                 s = m + 1;
-                root = e;
+                root = m;
             }
         }
         double increment = 0.1;
