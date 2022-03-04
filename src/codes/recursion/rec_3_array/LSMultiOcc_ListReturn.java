@@ -1,4 +1,4 @@
-package com.topics.recursion.array_rec_lec2;
+package src.codes.recursion.rec_3_array;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package lectures.arrays;
+package src.codes.basicTopics.arrays;
 
 import java.util.Arrays;
 import java.util.Scanner;

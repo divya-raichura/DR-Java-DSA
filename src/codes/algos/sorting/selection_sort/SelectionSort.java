@@ -1,4 +1,4 @@
-package src.codes.algos.sorting;
+package src.codes.algos.sorting.selection_sort;
 
 import java.util.Arrays;
 import java.util.Stack;

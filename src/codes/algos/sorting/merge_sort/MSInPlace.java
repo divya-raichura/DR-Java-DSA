@@ -13,7 +13,7 @@ public class MSInPlace {
         if (e - s == 1) {
             return;
         }
-        int m = (s + e) / 2;
+        int m = s + (e - s) / 2;
         mergeSortInPlace(arr, s, m);
         mergeSortInPlace(arr, m, e);
         merge(arr, s, m, e);

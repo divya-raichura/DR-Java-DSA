@@ -1,4 +1,4 @@
-package lectures.sorting;
+package src.codes.algos.sorting.cycle_sort;
 
 import java.util.Arrays;
 

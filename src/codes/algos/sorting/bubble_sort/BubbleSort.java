@@ -1,10 +1,10 @@
-package src.codes.algos.sorting;
+package src.codes.algos.sorting.bubble_sort;
 
 import java.util.Arrays;
 
 public class BubbleSort {
     public static void main(String[] args) {
-        int[] arr = {5,4,3,2,1};
+        int[] arr = {5, 4, 3, 2, 1};
 //        int[] arr = {5, 2, 6, 8, 1}; // 1,2,5,6,8
         sort(arr);
         System.out.println(Arrays.toString(arr));

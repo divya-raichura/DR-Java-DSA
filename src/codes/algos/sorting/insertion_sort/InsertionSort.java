@@ -1,4 +1,4 @@
-package src.codes.algos.sorting;
+package src.codes.algos.sorting.insertion_sort;
 
 import java.util.Arrays;
 
