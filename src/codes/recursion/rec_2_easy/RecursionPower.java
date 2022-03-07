@@ -1,4 +1,4 @@
-package recursion.rec_1_easy;
+package src.codes.recursion.rec_2_easy;
 
 // https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/tutorial/
 

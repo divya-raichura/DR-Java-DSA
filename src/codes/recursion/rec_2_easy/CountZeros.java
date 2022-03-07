@@ -2,7 +2,7 @@ package src.codes.recursion.rec_2_easy;
 
 public class CountZeros {
     public static void main(String[] args) {
-        System.out.println(countZeros(30124, 0));
+        System.out.println(countZeros(0, 0));
 
     }
 

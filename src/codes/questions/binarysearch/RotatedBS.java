@@ -1,4 +1,4 @@
-package com.questions.binarysearch;
+package src.codes.questions.binarysearch;
 //  https://leetcode.com/problems/search-in-rotated-sorted-array/
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package recursion.rec_1_easy;
+package src.codes.recursion.rec_2_easy;
 
 public class Sum_till_N {
     public static void main(String[] args) {

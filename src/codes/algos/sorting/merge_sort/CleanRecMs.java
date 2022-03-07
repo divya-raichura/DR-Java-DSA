@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class CleanRecMs {
     public static void main(String[] args) {
-        int[] arr = {8,4,5,1,3,2,6,7};
+        int[] arr = {8,4,5,1,3};
         arr = mergeSort(arr);
         System.out.println(Arrays.toString(arr));
     }

@@ -1,4 +1,4 @@
-package src.codes.recursion.rec_4;
+package src.codes.recursion.rec_4_pattern;
 
 // just experimenting
 

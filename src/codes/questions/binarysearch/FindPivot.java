@@ -1,4 +1,4 @@
-package questions.binarysearch;
+package src.codes.questions.binarysearch;
 
 public class FindPivot {
     public static void main(String[] args) {

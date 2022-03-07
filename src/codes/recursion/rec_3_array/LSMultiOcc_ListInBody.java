@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class LSMultiOcc_ListInBody {
     public static void main(String[] args) {
-        int[] arr = {3, 2, 1, 4, 9, 4};
+        int[] arr = {3, 2, 4, 9, 4};
         int target = 4;
         System.out.println(search(arr,target,0));
     }

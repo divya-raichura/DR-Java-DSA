@@ -1,4 +1,4 @@
-package recursion.rec_1_easy;
+package src.codes.recursion.rec_2_easy;
 
 public class Concept {
     // 1    // pehle 10 print kardeta, fir increment karta, toh niche agar sout(x) lagaya toh 11 print karega

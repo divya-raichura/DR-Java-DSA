@@ -2,10 +2,11 @@ package src.codes.algos.sorting.quick_sort;
 
 import java.util.Arrays;
 
-public class QS {
+public class QSkk {
     public static void main(String[] args) {
-        int[] arr = {-34, 42, -14, 0, 5, 1};
-        sort(arr, 0, arr.length - 1);
+        int[] num = {5, 0, 21, 45, -24};
+        int[] arr = {1, 2, 3, 4, 5};
+        sort(num, 0, num.length - 1);
         System.out.println(Arrays.toString(arr));
 //        Arrays.sort(arr);
     }

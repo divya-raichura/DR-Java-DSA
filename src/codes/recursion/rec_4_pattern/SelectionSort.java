@@ -1,10 +1,10 @@
-package src.codes.recursion.rec_4;
+package src.codes.recursion.rec_4_pattern;
 
 import java.util.Arrays;
 
 public class SelectionSort {
     public static void main(String[] args) {
-        int[] arr = {3, 0, -3, 5, 1};
+        int[] arr = {1,5,2,4,3};
         System.out.println(Arrays.toString(arr));
 //        selection(arr);
 //        recursionSelection(arr, 0);

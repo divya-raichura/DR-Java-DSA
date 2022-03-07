@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Sorted {
     public static void main(String[] args) {
-        int[] arr = {1, 2, 4, 5};
+        int[] arr = {1, 2, 0, 4, 5};
 //        System.out.println(check(arr));
 //        System.out.println(check2(arr));
 //        System.out.println(recCheck(arr, 0));
@@ -20,7 +20,7 @@ public class Sorted {
             return true;
         }
 
-        return (arr[index] < arr[index + 1]) && sortedRecursion(arr, index + 1);
+        return (arr[index] <= arr[index + 1]) && sortedRecursion(arr, index + 1);
     }
 
 

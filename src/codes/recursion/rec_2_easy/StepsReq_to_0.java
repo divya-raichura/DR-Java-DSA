@@ -1,4 +1,4 @@
-package com.topics.recursion.rec_1_easy;
+package src.codes.recursion.rec_2_easy;
 // https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/
 public class StepsReq_to_0 {
     public static void main(String[] args) {
