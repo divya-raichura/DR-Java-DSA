@@ -1,11 +1,11 @@
-package bitwiseOperators.lec_1;
+package src.codes.basicTopics.bitwiseOperators.lec_1;
 
 
 // https://docs.oracle.com/cd/E19253-01/817-6223/chp-typeopexpr-2/index.html
 // mast =  https://www.w3schools.com/java/java_data_types.asp
 
 
-            // W3 SCHOOLS OP
+            // W3 SCHOOLS
 /*
 - Primitive data types - includes byte, short, int, long, float, double, boolean and char
 - Non-primitive data types - such as String, Arrays and Classes

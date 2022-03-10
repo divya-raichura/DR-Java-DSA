@@ -1,6 +1,7 @@
-package src.codes.myPractice;
+package src.codes.myPractice.prac1;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Determinant {
     static final int N = 3;
@@ -72,5 +73,43 @@ public class Determinant {
                 {3, 2, 1}
         };
         System.out.print("Determinant of the matrix is : " + determinantOfMatrix(mat, N));
+//        Scanner in = new Scanner(System.in);
+//        System.out.print("dimension : ");
+//        int n = in.nextInt();
+//        int[][] arr = new int[n][n];
+//        System.out.println("fill elements");
+//        for (int row = 0; row < arr.length; row++) {
+//            for (int col = 0; col < arr[row].length; col++) {
+//                arr[row][col] = in.nextInt();
+//            }
+//        }
+//        System.out.println(det(arr));
     }
+
+
+//    static int det(int[][] mat) {
+//        if (mat.length == 1)
+//            return mat[0][0];
+//        if (mat.length == 2)
+//            return mat[0][0] * mat[1][1] - mat[1][0] * mat[0][1];
+//        int sum = 0, sign = 1;
+//        int newN = mat.length - 1;
+//        int[][] temp = new int[newN][newN];
+//        for (int t = 0; t < newN; t++) {
+//            int q = 0;
+//            for (int i = 0; i < newN; i++) {
+//                for (int j = 0; j < newN; j++) {
+//                    temp[i][j] = mat[1 + i][q + j];
+//                }
+//                // ye 'j' for loop ki jagah
+////                System.arraycopy(mat[1 + i], q + 0, temp[i], 0, newN);
+//                if (q == i)
+//                    q = 1;
+//            }
+//            sum += sign * mat[0][t] * det(temp);
+//            sign *= -1;
+//        }
+//        return sum;
+//    }
+
 }

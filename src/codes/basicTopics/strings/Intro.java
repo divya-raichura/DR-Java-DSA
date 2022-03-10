@@ -1,4 +1,4 @@
-package lectures.strings;
+package src.codes.basicTopics.strings;
 
 public class Intro {
     public static void main(String[] args) {

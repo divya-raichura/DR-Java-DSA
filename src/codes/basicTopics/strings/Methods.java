@@ -1,4 +1,4 @@
-package lectures.strings;
+package src.codes.basicTopics.strings;
 
 import java.util.Arrays;
 import java.util.Locale;

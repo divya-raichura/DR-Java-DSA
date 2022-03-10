@@ -1,23 +1,24 @@
-package lectures.strings;
+package src.codes.basicTopics.strings;
 
 public class Palindrome {
     public static void main(String[] args) {
-        String name = "abccba"; // works with empty string too
-        System.out.println(palin(name));
+        String name = "madam"; // works with empty string too
+        System.out.println(palin1(name));
+        System.out.println(palin2(name));
     }
 
     // string builder, while, for, reverse it and if og == reverse true
-    static boolean palin(String name) {
-        if (name == null) {
+    static boolean palin1(String str) {
+        if (str == null || str.length() == 0 || str.length() == 1) {
             return true;
         }
-        name = name.toLowerCase(); // so even if one of them is in
+        str = str.toLowerCase(); // so even if one of them is in
         // upper it doesn't matter
 
         int s = 0;
-        int e = name.length() - 1;
+        int e = str.length() - 1;
         while (s <= e) {
-            if (name.charAt(s) == name.charAt(e)) {
+            if (str.charAt(s) == str.charAt(e)) {
                 s++;
                 e--;
             } else {
@@ -28,7 +29,7 @@ public class Palindrome {
     }
 
     static boolean palin2(String str) {
-        if (str == null || str.length() == 0) {
+        if (str == null || str.length() == 0 || str.length() == 1) {
             return true;
         }
 
