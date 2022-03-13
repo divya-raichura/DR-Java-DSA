@@ -2,7 +2,8 @@ package bitwiseOperators.lec_1;
 
 
 // 1 feb 2022
-public class NonDuplicate_EvenRepeat {
+public class
+NonDuplicate_EvenRepeat {
     public static void main(String[] args) {
         int[] arr = {21, 69, 3, 11,  11, 69, 21};
         int[] arrKK = {2, 3, 3, 4, 2, 6, 4};

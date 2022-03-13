@@ -1,4 +1,4 @@
-package src.codes.recursion.practice;
+package src.codes.recursion.revise;
 
 public class RevNo {
     public static void main(String[] args) {

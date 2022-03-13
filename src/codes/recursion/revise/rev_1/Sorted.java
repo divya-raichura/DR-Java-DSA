@@ -1,6 +1,4 @@
-package src.codes.recursion.practice;
-
-import java.util.Arrays;
+package src.codes.recursion.revise;
 
 public class Sorted {
     public static void main(String[] args) {

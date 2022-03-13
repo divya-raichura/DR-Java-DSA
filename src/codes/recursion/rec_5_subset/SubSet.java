@@ -8,7 +8,7 @@ public class SubSet {
         int[] arr = {1, 2, 3};
         List<List<Integer>> list = subSet(arr);
         for (List<Integer> individual : list) {
-            System.out.println(individual);
+            System.out.print(individual + " ");
         }
     }
 

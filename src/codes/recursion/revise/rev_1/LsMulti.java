@@ -1,7 +1,6 @@
-package src.codes.recursion.practice;
+package src.codes.recursion.revise;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class LsMulti {
     public static void main(String[] args) {

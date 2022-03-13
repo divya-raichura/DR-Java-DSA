@@ -1,7 +1,7 @@
-package bitwiseOperators.lec_1;
-// --> Integer.parseInt(Integer.toBinaryString(result)) ===> to convert result(decimal)
-//     to binary using .binarystring method but ans is in string, so to convert that to
-//     integer we use .parse method
+package src.codes.basicTopics.bitwiseOperators.lec_1;
+// --> Integer.parseInt(Integer.toBinaryString(result)) ===>
+//     to convert result(decimal) to binary we use .binarystring method but ans is
+//     in string, so to convert that to integer we use .parse method
 public class NonDuplicate_OddRepeat {
     public static void main(String args[]) {
         int arr[] = {12, 1, 12, 3, 12, 1, 1, 2, 3, 2, 2, 3, 7};
@@ -28,14 +28,16 @@ public class NonDuplicate_OddRepeat {
 
             // iterate over every element's ith bit
             for (int j = 0; j < n; j++) { // n = arr.length
-                if ((arr[j] & x) != 0)
+                if ((arr[j] & x) != 0) {
                     sum++;
+                }
             } // after loop, we have sum of all 1's of all element's ith bit
 
             // The bits with sum not multiple of 3, are the
             // bits of element with single occurrence.
-            if ((sum % 3) != 0)
+            if ((sum % 3) != 0) {
                 result |= x; // think this, you'll know why, damn intelligent move
+            }
 
         }
         return result;
@@ -62,14 +64,16 @@ public class NonDuplicate_OddRepeat {
 
             // iterate over every element's ith bit
             for (int j = 0; j < n; j++) { // n = arr.length
-                if ((arr[j] & x) != 0)
+                if ((arr[j] & x) != 0) {
                     sum++;
+                }
             } // after loop, we have sum of all 1's of all element's ith bit
 
             // The bits with sum not multiple of 3, are the
             // bits of element with single occurrence.
-            if ((sum % 3) != 0)
+            if ((sum % 3) != 0) {
                 result |= x; // think this, you'll know why, damn intelligent move
+            }
         }
         return result;
     }

@@ -1,4 +1,4 @@
-package questions.sorting;
+package src.codes.questions.sorting;
 
 // https://leetcode.com/problems/missing-number/submissions/
 

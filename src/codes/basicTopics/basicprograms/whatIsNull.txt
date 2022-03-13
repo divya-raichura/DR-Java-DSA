@@ -1,0 +1,4 @@
+- https://www.geeksforgeeks.org/interesting-facts-about-null-in-java/
+
+- In Java programming, null can be assigned to any variable of a reference type (that is, a non-primitive type) to indicate that the variable does not refer to any object or array.
+- A null is neither an empty string (for character or datetime data types) nor a zero value (for numeric data types).

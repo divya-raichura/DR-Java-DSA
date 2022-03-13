@@ -1,4 +1,4 @@
-package bitwiseOperators.lec_1;
+package src.codes.basicTopics.bitwiseOperators.lec_1;
 
 // https://www.includehelp.com/algorithms/fast-exponentiation-using-bitmasking.aspx
 

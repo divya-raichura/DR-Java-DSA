@@ -1,9 +1,9 @@
-package lectures.bs2Darray;
+package src.codes.algos.bs2Darray;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class SortedMatrixKK {
+public class SortedMatrix {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int[][] arr = {

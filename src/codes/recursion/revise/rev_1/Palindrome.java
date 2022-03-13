@@ -1,4 +1,4 @@
-package src.codes.recursion.practice;
+package src.codes.recursion.revise;
 
 public class Palindrome {
     public static void main(String[] args) {

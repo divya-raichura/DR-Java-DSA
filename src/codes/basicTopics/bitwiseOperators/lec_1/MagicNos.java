@@ -1,15 +1,15 @@
-package bitwiseOperators.lec_1;
+package src.codes.basicTopics.bitwiseOperators.lec_1;
 
 
 public class MagicNos {
     public static void main(String[] args) {
-        int n = 6;
-//        myTryMagicNos(n);
-//        kkStyle(n);
+        int n = 3;
+        myTryMagicNos(n);
+        kkStyle(n);
     }
 
-
-    static void kkStyle(int n) { // complexity is log(n) // see lec to know 1.35hr
+    // complexity is log(n) // see lec to know 1.35hr
+    static void kkStyle(int n) {
         // or kk style :-
         int ans = 0;
         int base = 5;

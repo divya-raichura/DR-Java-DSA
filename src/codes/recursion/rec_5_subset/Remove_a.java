@@ -2,7 +2,7 @@ package src.codes.recursion.rec_5_subset;
 
 public class Remove_a {
     public static void main(String[] args) {
-        String name = "DivyaRaichura";
+        String name = "DivyaR";
 
         // 1
         System.out.println(remove(name, 0, ""));

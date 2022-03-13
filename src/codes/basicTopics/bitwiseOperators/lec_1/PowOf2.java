@@ -1,4 +1,4 @@
- package bitwiseOperators.lec_1;
+ package src.codes.basicTopics.bitwiseOperators.lec_1;
 
 
 public class PowOf2 {
