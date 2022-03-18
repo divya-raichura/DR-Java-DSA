@@ -1,4 +1,4 @@
-package lectures.basicprograms;
+package src.codes.basicTopics.basicprograms;
 
 import java.util.Scanner;
 

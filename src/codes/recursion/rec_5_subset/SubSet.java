@@ -6,10 +6,11 @@ import java.util.List;
 public class SubSet {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3};
-        List<List<Integer>> list = subSet(arr);
-        for (List<Integer> individual : list) {
-            System.out.print(individual + " ");
-        }
+//        List<List<Integer>> list = subSet(arr);
+//        for (List<Integer> individual : list) {
+//            System.out.print(individual + " ");
+//        }
+        System.out.println(subSet(arr));
     }
 
 

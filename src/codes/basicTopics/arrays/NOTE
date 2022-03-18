@@ -1,0 +1,10 @@
+I got confused between arraylist and array
+I thought arraylist is collection of arrays like
+arraylist<Integer> is collection of all int[] arr but
+difference between arraylist and arrays is that both are same, just
+arraylist doesn't need a fixed size but in arrays we need to give fixed size
+to fill elements
+
+also,
+arraylist<arraylist<Integer>> is a collection of arraysvof int data type which
+ don't require a fixed size
