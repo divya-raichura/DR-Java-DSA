@@ -1,13 +1,14 @@
-package lectures.functions;
+package src.codes.basicTopics.functions;
 
 import java.util.Arrays;
 
 public class VarArgs {
-    public static void main(String[] args) {}
+    public static void main(String[] args) {
+        demo("kunal", "modi");
+    }
 //        fun(2,3,4,5,65,45,11,99,21);
 //        multiple(2, 13, "kunal", "modi", "aman");
 //        demo(2, 5, 44, 45);
-//        demo("kunal", "modi");
 
         /*
           if we do demo() and do not write anything inside it in this case, it will

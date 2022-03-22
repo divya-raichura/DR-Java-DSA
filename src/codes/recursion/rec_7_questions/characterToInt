@@ -1,5 +1,6 @@
     -->  up.charAt(0) is a character, we convert it to string using
-         value of and then to convert string to int, we use parse method
+         valueof and then to convert this string to int, we use parseInt
+          method
 
     int digit = Integer.parseInt(String.valueOf(up.charAt(0)));
 
