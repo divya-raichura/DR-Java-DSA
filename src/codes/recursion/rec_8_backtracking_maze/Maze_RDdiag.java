@@ -39,6 +39,23 @@ public class Maze_RDdiag {
          */
     }
 
+    //    (0,0) to (2,2)
+    static int count(boolean[][] arr, int row, int col) {
+        if (row == arr.length - 1 || col == arr[0].length - 1) {
+            return 1;
+        }
+        int count = 0;
+        if (row < arr.length - 1) {
+            int down = count(arr, row + 1, col);
+            count += down;
+        }
+        if (col < arr[0].length - 1) {
+            int right = count(arr, row, col + 1);
+            count += right;
+        }
+        return count;
+    }
+
     static void mazePrintPath(String p, int row, int col) {
         if (row == 1 || col == 1) {
             if (row == 1) {

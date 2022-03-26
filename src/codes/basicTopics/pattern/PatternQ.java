@@ -1,4 +1,4 @@
-package lectures.pattern;
+package src.codes.basicTopics.pattern;
 
 // step 1: find the no of rows
 // step 2: find the relation between row and col in each col
@@ -17,8 +17,8 @@ public class PatternQ {
 //        pattern28(5);
 //        pattern30(5);
 //        pattern30kk(5);
-        pattern17(5);
-//        pattern31(4);
+//        pattern17(5);
+        pattern31(4);
     }
 
 
@@ -182,6 +182,5 @@ public class PatternQ {
             System.out.println();
         }
     }
-
 
 }
