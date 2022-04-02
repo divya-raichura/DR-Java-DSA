@@ -1,0 +1,14 @@
+// https://www.javatpoint.com/java-constructor
+// https://www.javatpoint.com/why-we-use-constructor-in-java
+
+---->>> alt + insert == shortcut for constructor.
+
+A constructor in Java is a special method that is used to initialize objects.
+The constructor is called when an object of a class is created.
+It can be used to set initial values for object attributes.
+
+
+No, constructor does not return any value. While declaring a constructor
+you will not have anything like return type. In general, Constructor is
+implicitly called at the time of instantiation. And it is not a method, its
+sole purpose is to initialize the instance variables.

@@ -1,4 +1,4 @@
-package lectures.binarysearch;
+package src.codes.algos.binarysearch;
 
 public class BinarySearch {
     public static void main(String[] args) {
