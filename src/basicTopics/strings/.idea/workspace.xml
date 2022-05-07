@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b235ca11-f294-4de5-bcce-c71ad1c62799" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../oop/oop_2/notes/staticKyaH" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/algos/binarysearch/BSRevision.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/algos/binarysearch/BinarySearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/algos/binarysearch/Delete.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/algos/binarysearch/OrderAgnosticBS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/algos/bs2Darray/RowColSorted.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/algos/bs2Darray/SortedMatrix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/algos/linearsearch/EvenDigits.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/algos/linearsearch/EvenMe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/algos/linearsearch/FindMin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/algos/linearsearch/MaxWealth.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/algos/linearsearch/SearchIn2DArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/algos/linearsearch/SearchInStrings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/algos/linearsearch/Syntax.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/algos/sorting/Stable&amp;Unstable" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/algos/sorting/bubble_sort/BubbleSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/algos/sorting/cycle_sort/CycleSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/algos/sorting/insertion_sort/InsertionSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/algos/sorting/merge_sort/CleanRecMs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/algos/sorting/merge_sort/MSInPlace.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/algos/sorting/merge_sort/RecursiveMS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/algos/sorting/merge_sort/TimeComplexity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/algos/sorting/quick_sort/QSkk.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/algos/sorting/quick_sort/QSpreferred.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/algos/sorting/quick_sort/TimeComplexity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/algos/sorting/selection_sort/SelectionSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/FiboFormula/FiboFormula.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/PassByRef vs PassByValue/Pass by value vs ref link" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/arrays/ArrayListExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/arrays/ColumnNoFixed.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/arrays/Intro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/arrays/Max.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/arrays/MultiArrayList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/arrays/MultiDimension.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/arrays/NOTE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/arrays/PassingFunction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/arrays/ReverseRevision.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/arrays/Revision.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/arrays/Swap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/basicprograms/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/basicprograms/CalculatorPractice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/basicprograms/CaseCheck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/basicprograms/CountingOccurrences.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/basicprograms/FibonacciNos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/basicprograms/Hello.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/basicprograms/Largest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/basicprograms/Loops.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/basicprograms/Practice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/basicprograms/PrimeNos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/basicprograms/ReverseCount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/basicprograms/Switch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/basicprograms/Switch_2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/basicprograms/TempConvertor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/basicprograms/Typecasting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/basicprograms/whatIsNull.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/bitwiseOperators/lec_1/ApowerB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/bitwiseOperators/lec_1/BitFind_Set_Reset.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/bitwiseOperators/lec_1/CountOfDigits.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/bitwiseOperators/lec_1/DataTypes_Range.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/bitwiseOperators/lec_1/GoogleQ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/bitwiseOperators/lec_1/GoogleQDiffMethod.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/bitwiseOperators/lec_1/Imp Q" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/bitwiseOperators/lec_1/MagicNos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/bitwiseOperators/lec_1/NoOfSetBits.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/bitwiseOperators/lec_1/NonDuplicate_EvenRepeat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/bitwiseOperators/lec_1/NonDuplicate_OddRepeat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/bitwiseOperators/lec_1/OddEven.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/bitwiseOperators/lec_1/Operators_Imp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/bitwiseOperators/lec_1/PascalTriangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/bitwiseOperators/lec_1/PowOf2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/bitwiseOperators/lec_1/RangeXOR.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/bitwiseOperators/lec_1/RightmostSetPosn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/bitwiseOperators/lec_2/Date" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/bitwiseOperators/lec_2/Factors.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/bitwiseOperators/lec_2/GCD_Euclidean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/bitwiseOperators/lec_2/LCM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/bitwiseOperators/lec_2/NewtonSQRT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/bitwiseOperators/lec_2/NumberTheoryLinkToRefer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/bitwiseOperators/lec_2/PrimeNos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/bitwiseOperators/lec_2/Sieve.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/bitwiseOperators/lec_2/Sqrt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/functions/ArmstrongNo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/functions/ArrayPassByVal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/functions/ChangeValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/functions/Greeting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/functions/Overloading.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/functions/PassByArrayImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/functions/PassByRefORvalue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/functions/PrimeNosQ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/functions/Scoping.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/functions/Shadowing.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/functions/StringExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/functions/Sum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/functions/VarArgs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/functions/Why.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/pattern/Pattern.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/pattern/PatternPractice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/pattern/PatternQ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/strings/ASCII Values" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/strings/Comparison.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/strings/DotEquals.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/strings/FormatSpecifiers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/strings/Intro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/strings/Methods.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/strings/Operators.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/strings/Output.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/strings/Palindrome.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/strings/Performance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/strings/PrettyPrinting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/basicTopics/strings/SB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/myPractice/prac1/Ackerman.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/myPractice/prac1/Anagram.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/myPractice/prac1/ArrangeCoins.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/myPractice/prac1/Coins.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/myPractice/prac1/Determinant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/myPractice/prac1/EnormousInput_Codechef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/myPractice/prac1/FairCandySwap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/myPractice/prac1/MinCoinsForAmt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/myPractice/prac1/PatternClg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/myPractice/prac1/PerimeterSorting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/myPractice/prac1/PlusOne.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/myPractice/prac1/SortColour.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/myPractice/prac1/SumOfDiagonal2dArr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/myPractice/prac1/ThirdMaxNo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/myPractice/prac1/Vowels.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/myPractice/prac1/sorting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/myPractice/prac2/ReverseString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/myPractice/prac2/SameSurnameSubstringQ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/questions/binarysearch/BinarysearchSyntax.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/questions/binarysearch/Ceiling.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/questions/binarysearch/FindPivot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/questions/binarysearch/FirstAndLastPosition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/questions/binarysearch/Floor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/questions/binarysearch/IndexInMounArrPracImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/questions/binarysearch/InfiniteArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/questions/binarysearch/MountainArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/questions/binarysearch/RotatedBS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/questions/binarysearch/SearchInMounArrRev.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/questions/binarysearch/SearchInMountain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/questions/binarysearch/SmallestLetterCeiling.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/questions/binarysearch/SplitArrRev.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/questions/binarysearch/SplitArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/questions/sorting/FIndDuplicate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/questions/sorting/FindAllDuplicates.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/questions/sorting/FindAllMissingNos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/questions/sorting/MisMatch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/questions/sorting/MissingNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/questions/sorting/MissingPositive.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../codes/questions/sorting/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../leetcode/Solution_338.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../leetcode/Solution_344.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../leetcode/Solution_392.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oop/codes/oop_1/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../oop/oop_1/codes/Bank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oop/codes/oop_1/Constructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../oop/oop_1/codes/Constructor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oop/codes/oop_1/ConstructorBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../oop/oop_1/codes/ConstructorBasic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oop/codes/oop_1/Expi.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../oop/oop_1/codes/Expi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oop/codes/oop_1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../oop/oop_1/codes/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oop/codes/oop_1/TestThis.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../oop/oop_1/codes/TestThis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oop/codes/oop_1/WrapperClass_Swap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../oop/oop_1/codes/WrapperClass_Final.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oop/codes/oop_2/nayaPackage/A.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../oop/oop_2/codes/nayaPackage/A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oop/codes/oop_2/nayaPackage/Msg.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../oop/oop_2/codes/nayaPackage/Msg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oop/codes/oop_2/packages/B.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../oop/oop_2/codes/packages/B.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oop/codes/oop_2/packages/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../oop/oop_2/codes/packages/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oop/codes/oop_2/packages/Packages.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../oop/oop_2/codes/packages/Packages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oop/codes/oop_2/singleton/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../oop/oop_2/codes/singleton/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oop/codes/oop_2/singleton/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../oop/oop_2/codes/singleton/Singleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oop/codes/oop_2/staticEg/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../oop/oop_2/codes/staticEg/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oop/codes/oop_2/staticEg/InnerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../oop/oop_2/codes/staticEg/InnerClasses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oop/codes/oop_2/staticEg/InnerClasses_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../oop/oop_2/codes/staticEg/InnerClasses_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oop/codes/oop_2/staticEg/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../oop/oop_2/codes/staticEg/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oop/codes/oop_2/staticEg/StaticBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../oop/oop_2/codes/staticEg/StaticBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oop/codes/oop_2/staticEg/StaticInMainFunc.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../oop/oop_2/codes/staticEg/StaticInMainFunc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oop/date/Date" beforeDir="false" afterPath="$PROJECT_DIR$/../../oop/date/Date" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oop/notes/classes" beforeDir="false" afterPath="$PROJECT_DIR$/../../oop/oop_1/notes/classes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oop/notes/constructors" beforeDir="false" afterPath="$PROJECT_DIR$/../../oop/oop_1/notes/constructors" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oop/notes/namingConventions" beforeDir="false" afterPath="$PROJECT_DIR$/../../oop/oop_1/notes/namingConventions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oop/notes/packages" beforeDir="false" afterPath="$PROJECT_DIR$/../../oop/oop_2/notes/packages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oop/notes/staticKyaH" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oop/notes/this" beforeDir="false" afterPath="$PROJECT_DIR$/../../oop/oop_1/notes/this" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../recursion/rec_5_subset/SubSeq.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../recursion/rec_5_subset/SubSeq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../recursion/rec_5_subset/SubSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../recursion/rec_5_subset/SubSet.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="27wDtJRakZw7sJGmSLrmlXVfS7I" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b235ca11-f294-4de5-bcce-c71ad1c62799" name="Changes" comment="" />
+      <created>1650222470542</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1650222470542</updated>
+    </task>
+    <servers />
+  </component>
+</project>

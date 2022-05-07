@@ -1,0 +1,39 @@
+    -->  up.charAt(0) is a character, we convert it to string using
+         valueof and then to convert this string to int, we use parseInt
+          method
+
+    int digit = Integer.parseInt(String.valueOf(up.charAt(0)));
+
+
+
+ NOTE : digits.charAt(i)        is char
+        digits.charAt(i) - '0'  is int
+
+
+
+     -->   up.substring(0,1) gives first string and then we convert it
+        to int by parse int method
+
+    int digit = Integer.parseInt(up.substring(0, 1));
+
+
+
+
+
+    -->     String up = "32";
+            int digit = up.charAt(0);
+            This gives the unicode value of the character charAt(0) == 3 which is 51
+
+
+            now, every character which is a number eg '1' or '23' has its own unicode value
+            int ecp = '0'; --> it stores unicode value of character 0 == 48
+            int ecp = '1'; --> it stores unicode value of character 1 == 49
+            similarly '2' = 50, '3' = 51...
+
+            now we see that if we subtract '1' - '0' then, 49-48 == we get 1
+            so if we subtract a character which is number from a '0' character we get that
+            character from which we subtracted '0' ie '1' - '0' then, 49-48 == we get 1
+            String up = "32";
+            int digit = up.charAt(0) - '0';
+            if we do this then it will be '3'-'0' == 51 - 48 == 3
+
