@@ -1,0 +1,36 @@
+# private :-
+
+- for sensitive data that we don't want direct access, so how to use it?
+- we can use it using getters and setters methods, like methods which can be public
+
+# no modifier :-
+
+- for those vars that we don't want to be used outside a particular package
+- eg. we have students package, to prevent using it's data outside student
+  package, we use this
+
+# protected :-
+
+- when we don't want vars to access from outside package but we want to
+  allow access outside package only when it is in subclass, that is object
+  is made using subclass ref and obj type
+- protected cannot be used when object is made which are not subclass ie in
+  different package if object is of subclass (both ref and obj type) then
+  only but if in that subclass or if its not subclass make obj of ref type
+  parent or both ref and obj type parent then we cannot use protected
+- eg. Subclass obj = new Subclass(); // only this can access protected outside package
+      Parent obj = new Subclass();
+      Parent obj = new Parent(); // this both cannot access
+    -> cause parent doesn't know what are base classes, it doesn't know if someone
+       is extending it... and also,
+       if accessing like this was possible then there would be no diff between
+       public and protected
+
+       so in diff package you can access protected via subclass only cause subclass
+       knows what i am extending, the extending class doesn't know that subclass
+       is extending it
+
+
+# public :-
+
+- can be accessed anywhere

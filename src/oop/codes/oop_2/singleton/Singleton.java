@@ -1,8 +1,8 @@
-package src.oop.codes.oop_2.singleton;
+package src.oop.oop_2.singleton;
 
 public class Singleton {
     private Singleton() {
-
+        // v.v.imp to create it and make it private
     }
 
     private static Singleton instance;

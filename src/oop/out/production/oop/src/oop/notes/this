@@ -1,0 +1,69 @@
+resources: https://www.w3schools.com/java/ref_keyword_this.asp#:~:text=The%20this%20keyword%20refers%20to,a%20method%20or%20constructor%20parameter).
+           https://www.geeksforgeeks.org/this-reference-in-java/
+           https://www.javatpoint.com/this-keyword
+
+The this keyword refers to the current object in a method or constructor.
+
+// ok, jab same hote hai parameters ke naam then we use this. to specify which one is
+instance variable then why do we use it when names are different and this. is not needed?
+ans :-
+It is better approach to use meaningful names for variables. So we use same
+name for instance variables and parameters in real time, and always use this keyword.
+
+////// The most common reason for using the this keyword is because a
+ field is shadowed by a method or constructor parameter.
+ public class Point {
+     public int x = 0;
+     public int y = 0;
+
+     //constructor
+     public Point(int a, int b) {
+         x = a;
+         y = b;
+     }
+ }
+
+ but it could have been written like this:
+
+public class Point {
+    public int x = 0;
+    public int y = 0;
+
+    //constructor
+    public Point(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+}
+Each argument to the constructor shadows one of the object's fields — inside
+the constructor x is a local copy of the constructor's first argument. To refer
+to the Point field x, the constructor must use this.x.
+
+one use of this keyword is to eliminate the confusion between class
+attributes and parameters with the same name (because a class attribute
+is shadowed by a method or constructor parameter). If you omit the keyword
+in the example above, the output would be "0" instead of "5".
+
+this can also be used to:
+Invoke current class constructor
+Invoke current class method
+Return the current class object
+Pass an argument in the method call
+Pass an argument in the constructor call
+
+
+////  Call to this() must be the first statement in constructor.
+
+
+resource : https://www.quora.com/When-exactly-do-I-need-to-use-this-keyword-in-Java-programming-Why-is-it-necessary
+
+Strictly speaking it’s only necessary to use this to disambiguate between
+ a variable defined on the class (i.e. an instance variable) and a
+ similarly-named variable defined locally inside the method, or as a
+ parameter on the method.
+
+However, my personal opinion and practice is to always use this.
+variable name when referring to an instance variable, because it removes
+ any ambiguity and it prevents the possibility of later mistakes. I don’t
+  see any consequential upside to leaving this off, aside from the
+  negligible benefit of saving five keystrokes.

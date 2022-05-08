@@ -1,4 +1,4 @@
-package src.oop.codes.oop_2.singleton;
+package src.oop.oop_2.singleton;
 
 // in that static string name in innerclasses.java we were creating two objects
 // thought when we did output only kunal was printed, as first "divya" obj was created and

@@ -1,0 +1,13 @@
+https://stackoverflow.com/questions/48064103/how-an-object-of-one-class-with-the-reference-variable-of-another-class-in-java
+
+What is the concept of creating an object of one class and referencing it with the reference variable of other class in java?
+2
+
+Think about it this way: all Kia Souls are cars, but not all cars are Kia Souls. I can assume that Kia Souls have all properties that are common to all cars, but I know for a fact that cars in general don't have all of the same properties as Kia Souls.
+
+You can do something like
+
+Car car = new KiaSoul();
+but you specifically cannot do something like
+
+KiaSoul soul = new Car();

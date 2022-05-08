@@ -1,0 +1,15 @@
+we can inherit final and static methods, inherit means we can call those methods of parent
+class from a child class object
+but we cannot override those methods
+
+Q)   Is final method inherited?
+Ans) Yes, final method is inherited but you cannot override it. For Example:
+
+class Bike{
+  final void run(){System.out.println("running...");}
+}
+class Honda2 extends Bike{
+   public static void main(String args[]){
+    new Honda2().run();
+   }
+}
