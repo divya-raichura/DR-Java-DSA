@@ -29,5 +29,33 @@ public class fibo_better {
             c = temp;
             count++;
         }
+        /*
+        Scanner in = new Scanner(System.in);
+        int a = 0;
+        int b = 1;
+        int n = in.nextInt();
+        while (a < n) { // prints fibo till n numbers
+
+            // print fibo numbers till n eg n = 7 then 0 1 1 2 3 5
+            System.out.print(a + " ");
+            int temp = b;
+            b = a + b;
+            a = temp;
+        }
+
+        a = 0;
+        b = 1;
+        int n2 = in.nextInt();
+        int count = 0;
+        System.out.println();
+        while (count <= n2) {
+            // print fibo numbers till nth number eg n = 7 then 0 1 1 2 3 5 8 13
+            System.out.print(a + " ");
+            int temp = b;
+            b = a + b;
+            a = temp;
+            count++;
+        }
+        */
     }
 }

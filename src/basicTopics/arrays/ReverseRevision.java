@@ -1,4 +1,4 @@
-package lectures.arrays;
+package src.basicTopics.arrays;
 
 import java.util.ArrayList;
 import java.util.Arrays;

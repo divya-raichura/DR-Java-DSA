@@ -1,4 +1,4 @@
-package src.codes.myPractice.prac2;
+package src.questions.leetcode.myPractice.prac2;
 
 public class ReverseString {
     public static void main(String[] args) {

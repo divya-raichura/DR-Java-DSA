@@ -1,4 +1,4 @@
-package src.codes.recursion.rec_7_questions;
+package src.recursion.rec_7_permutationQuestions;
 
 import java.util.ArrayList;
 import java.util.List;
