@@ -1,0 +1,14 @@
+- this will make sure you can add only asked data type
+- generic help us in providing parameterized type
+- it means the class will have only particular type of objects
+- we can reuse the code for different data types.
+- it provides type safety so that we can use only the asked data type
+
+
+https://docs.oracle.com/javase/tutorial/java/generics/index.html
+https://docs.oracle.com/javase/tutorial/extra/generics/index.html
+https://www.javatpoint.com/generics-in-java
+https://www.baeldung.com/java-generics
+
+must read this one, explains why primitive not allowed
+https://www.baeldung.com/java-generics

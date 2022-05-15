@@ -1,6 +1,6 @@
 package src.oop.codes.oop_3.codes.inheritance.OneClassObj_OtherRef;
 
-import src.oop.codes.oop_5.code.interfaces.car_.Car;
+import src.oop.codes.oop_5.interfaces.car_.Car;
 
 public class Main {
     public static void main(String[] args) {
