@@ -3,3 +3,9 @@ int n = '3' - '0';
 3 -> achii 51
 
 '3' - '0' --> 51 - 48 = 3 (in integer)
+
+
+        int n = 'b' - 'a';
+'a' -> ascii 97
+'b' -> ascii 98
+n = 1 in integer

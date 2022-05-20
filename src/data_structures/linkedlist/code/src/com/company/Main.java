@@ -1,12 +1,12 @@
 package com.company;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 
 public class Main {
 
     public static void main(String[] args) {
         LinkedList<Integer> l = new LinkedList<>();
-
 //        LL list = new LL();  // whenever we create new linked list, initially,
 //        // 3 things will be initialized -> size, head and a tail will be there
 //        // size = 0, head and tail = null
@@ -43,15 +43,37 @@ public class Main {
 //        list.addAfter(27, 34);
 //        list.display();
 
-        CircularLL list = new CircularLL();
-        list.insert(4);
+//        CircularLL list = new CircularLL();
+//        list.insert(4);
 //        list.insert(64);
 //        list.insert(24);
 //        list.insert(98);
 //        list.insert(31);
+//        list.display();
+
+//        list.delete(4);
+//        list.display();
+
+
+//        LL list = new LL();
+//        list.insertRec(212, 2);
+//        list.display();
+
+        // questions
+
+        LL list = new LL();
+        list.insertFirst(5);
+        list.insertFirst(4);
+        list.insertFirst(3);
+        list.insertFirst(2);
+        list.insertFirst(1);
+        list.display();
+//        list.removeDup();
+
+//        list.reverse();
+        list.reverseIterative();
         list.display();
 
-        list.delete(4);
-        list.display();
+//        list.reverse(2,4);
     }
 }
