@@ -440,6 +440,90 @@ public class Questions {
 
     }
 
+    private int length(ListNode node) {
+        int length = 0;
+        while (node != null) {
+            node = node.next;
+            length++;
+        }
+        return length;
+    }
+
+
+    
+    // leetcode solution 1
+    // https://leetcode.com/problems/intersection-of-two-linked-lists/discuss/49785/Java-solution-without-knowing-the-difference-in-len!
+
+    // above link is the best solution for intersection
+    // below solution is also good, easy to understand
+    // leetcode solution 2
+    public ListNode getIntersectionNodeLeet(ListNode headA, ListNode headB) {
+        int lenA = length(headA), lenB = length(headB);
+        // move headA and headB to the same start point
+        while (lenA > lenB) {
+            headA = headA.next;
+            lenA--;
+        }
+        while (lenA < lenB) {
+            headB = headB.next;
+            lenB--;
+        }
+        // find the intersection until end
+        while (headA != headB) {
+            headA = headA.next;
+            headB = headB.next;
+        }
+        return headA;
+    }
+
+    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+
+
+
+        if(headA == null || headB == null) return null;
+        if(headA == headB) return headA;
+
+        ListNode t1 = headA;
+        ListNode t2 = headB;
+        int len1 = length(headA);
+        int len2 = length(headB);
+        
+        int max = 0;
+        ListNode temp;
+        if (len1 > len2) {
+            max = len1 - len2;
+            temp = headA;
+            t2 = headB;
+            while(max > 0){
+                temp = temp.next;
+                max--;
+            }
+            while(temp != t2) {
+
+                temp = temp.next;
+                t2 = t2.next;
+            }
+            return t2;
+        }
+        else {
+            max = len2 - len1;
+            temp = headB;
+            t1 = headA;
+            while(max > 0){
+                temp = temp.next;
+                max--;
+            }
+            while(temp != t1) {
+
+                temp = temp.next;
+                t1 = t1.next;
+            }
+            return t1;
+        }
+
+        // return null;
+    }
+
     private class Node {
         private int value;
         private Node next;
