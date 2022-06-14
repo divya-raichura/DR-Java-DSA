@@ -1,6 +1,6 @@
 int n = '3' - '0';
-0 -> achii 48
-3 -> achii 51
+0 -> ascii 48
+3 -> ascii 51
 
 '3' - '0' --> 51 - 48 = 3 (in integer)
 
