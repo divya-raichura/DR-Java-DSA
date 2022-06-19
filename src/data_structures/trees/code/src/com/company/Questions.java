@@ -301,6 +301,21 @@ public class Questions {
 
 // https://leetcode.com/problems/invert-binary-tree/discuss/62707/Straightforward-DFS-recursive-iterative-BFS-solutions
 
+    public TreeNode invert(TreeNode root) {
+        Queue<TreeNode> queue = new ArrayDeque<>();
+        if (root == null) return null;
+        queue.add(root);
+        while (!queue.isEmpty()) {
+            TreeNode pop = queue.poll();
+            if (pop.left != null) queue.add(pop.left);
+            if (pop.right != null) queue.add(pop.right);
+            TreeNode l = pop.left;
+            pop.left = pop.right;
+            pop.right = l;
+        }
+        return root;
+    }
+
 
     // zig zag level order traversal
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
@@ -342,24 +357,23 @@ public class Questions {
     // Recursion
     public boolean isSymmetricRec(TreeNode left, TreeNode right) {
         if (left ==null || right == null) return left == right;
-        if (left.val != right.val) return false;
-        return isSymmetricRec(left.left, right.right) && isSymmetricRec(left.right, right.left);
+        return left.val == right.val && isSymmetricRec(left.left, right.right) && isSymmetricRec(left.right, right.left);
     }
 
-    // Iteration
+    // Iterative
     public boolean isSymmetricIterative(TreeNode root) {
         if (root == null) return true;
         Stack<TreeNode> stack = new Stack<>();
         stack.push(root.left);
         stack.push(root.right);
         while (!stack.empty()) {
-            TreeNode n1 = stack.pop(), n2 = stack.pop();
-            if (n1 == null && n2 == null) continue;
-            if (n1 == null || n2 == null || n1.val != n2.val) return false;
-            stack.push(n1.left);
-            stack.push(n2.right);
-            stack.push(n1.right);
-            stack.push(n2.left);
+            TreeNode l = stack.pop(), r = stack.pop(); // stack can store null
+            if (l == null && r == null) continue;
+            if (l == null || r == null || l.val != r.val) return false;
+            stack.push(l.left);
+            stack.push(r.right);
+            stack.push(l.right);
+            stack.push(r.left);
         }
         return true;
     }
@@ -385,6 +399,7 @@ public class Questions {
         }
     }
 
+
     // string builder
     public List<String> binaryTreePathsSB(TreeNode root) {
         List<String> ans = new ArrayList<>();
@@ -392,14 +407,6 @@ public class Questions {
         if (root == null) return ans;
         binaryTreePathsHelperSB(ans, root, sb);
         return ans;
-    }
-
-    public void make() {
-        TreeNode root = new TreeNode(1);
-        root.left = new TreeNode(2);
-        root.right = new TreeNode(3);
-        root.left.right = new TreeNode(5);
-        binaryTreePathsSB(root);
     }
 
     private void binaryTreePathsHelperSB(List<String> res, TreeNode root, StringBuilder sb) {
@@ -418,6 +425,156 @@ public class Questions {
         sb.setLength(len);
     }
 
+    // ROOT TO NODE (for only leaf, not any node)
+    public boolean path(TreeNode node, TreeNode target, List<Integer> list) {
+        if (node == null) return false;
+
+        if (node.left == null && node.right == null) {
+            if (node.val != target.val) return false;
+            list.add(node.val);
+            return true;
+        }
+
+        list.add(node.val);
+        boolean l = path(node.left, target, list);
+        if (l) return true;
+        boolean r = path(node.right, target, list);
+        if (r) return true;
+        list.remove(list.size() - 1);
+        return false;
+    }
+
+    // For path to any target node
+    public boolean getPath(TreeNode node, int target, List<Integer> list) {
+        if (node == null) return false;
+
+        list.add(node.val);
+
+        if (node.val == target) return true;
+
+        if (getPath(node.left, target, list) || getPath(node.right, target, list)) return true;
+
+        list.remove(list.size() - 1);
+
+        return false;
+    }
+
+    public void make() {
+        TreeNode root = new TreeNode(3);
+        root.left = new TreeNode(5);
+        root.left.left = new TreeNode(6);
+        root.right = new TreeNode(1);
+        root.right.left = new TreeNode(0);
+        root.right.right = new TreeNode(8);
+        root.left.right = new TreeNode(2);
+        root.left.right.left = new TreeNode(7);
+        root.left.right.right = new TreeNode(4);
+        lowestCommonAncestorOp(root, root.left, root.right);
+    }
+
+    // LCA -> brute force
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        if (root == null || (root.left == null && root.right == null)) return root;
+        List<TreeNode> a = new ArrayList<>();
+        lowestCommonAncestorHelper(root, p.val, a);
+        List<TreeNode> b = new ArrayList<>();
+        lowestCommonAncestorHelper(root, q.val, b);
+        TreeNode ans = root;
+        for (int i = a.size() - 1; i >=0  ; i--) {
+            for (int j = b.size()-1; j >= 0  ; j--) {
+                if (a.get(i).val == b.get(j).val) return a.get(i);
+            }
+        }
+        return ans;
+    }
+
+    // helper for solution 1 (bruteforce solution)
+    public boolean lowestCommonAncestorHelper(TreeNode node, int target, List<TreeNode> list) {
+        if (node == null) return false;
+        list.add(node);
+        if (node.val == target) return true;
+        if (lowestCommonAncestorHelper(node.left, target, list) || lowestCommonAncestorHelper(node.right, target, list)) {
+            return true;
+        }
+        list.remove(list.size() - 1);
+        return false;
+    }
+
+    // LCA -> optimised
+    public TreeNode lowestCommonAncestorOp(TreeNode node, TreeNode p, TreeNode q) {
+        if (node == null) return null;
+
+        if (node.val == p.val) return p;
+        if (node.val == q.val) return q;
+
+        TreeNode l = lowestCommonAncestorOp(node.left, p, q);
+        TreeNode r = lowestCommonAncestorOp(node.right, p, q);
+
+        if (l == null && r == null) return null;
+
+        if (l == null) return r;
+
+        if (r == null) return l;
+
+        return node;
+        /*
+        striver's optimised code
+        //base case
+        if (root == null || root == p || root == q) {
+            return root;
+        }
+        TreeNode left = lowestCommonAncestor(root.left, p, q);
+        TreeNode right = lowestCommonAncestor(root.right, p, q);
+
+        //result
+        if(left == null) {
+            return right;
+        }
+        else if(right == null) {
+            return left;
+        }
+        else { //both left and right are not null, we found our result
+            return root;
+        }
+         */
+    }
+
+    // MAX WIDTH
+    public int widthOfBinaryTree(TreeNode root) {
+        if (root == null) return 0;
+        Queue<Pair> queue = new LinkedList<>();
+        queue.offer(new Pair(root, 0));
+        int width = 0;
+        while (!queue.isEmpty()) {
+            int size = queue.size();
+            int nmin = queue.peek().index; // min index of a level
+            int first = 0 , last = 0;
+            for (int i = 0; i < size; i++) {
+                Pair pop = queue.poll();
+                int curr_id = pop.index - nmin;
+                if (i == 0) first = curr_id;
+                if (i == size - 1) last =  curr_id;
+                if (pop.node.left != null) {
+                    queue.offer(new Pair(pop.node.left, 2 * curr_id + 1));
+                }
+                if (pop.node.right != null) {
+                    queue.offer(new Pair(pop.node.right, 2 * curr_id + 2));
+                }
+            }
+            width = Math.max(width, last - first + 1);
+        }
+        return width;
+    }
+
+    public class Pair{
+        TreeNode node;
+        int index;
+
+        public Pair(TreeNode node, int index) {
+            this.node = node;
+            this.index = index;
+        }
+    }
 
     private class TreeNode {
         int val;
@@ -438,11 +595,15 @@ public class Questions {
         }
     }
 
-
     public static void main(String[] args) {
         String a = "->";
         System.out.println(a + 2);
         Questions tree = new Questions();
+        List<Integer> list = new ArrayList<>();
+        list.add(2);
+        list.add(2);
+        list.remove(list.size() - 1);
         tree.make();
     }
+
 }
