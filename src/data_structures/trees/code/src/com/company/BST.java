@@ -7,11 +7,6 @@ public class BST {
     private static int number = 0;
     private static int count = 0;
 
-    public static void main(String[] args) {
-        BST bst = new BST();
-        bst.m();
-    }
-
     public void make() {
         TreeNode treeNode = new TreeNode(4);
         treeNode.left = new TreeNode(2);
@@ -209,13 +204,6 @@ public class BST {
         return -1;
     }
 
-    public void m() {
-        TreeNode root = new TreeNode(214748364);
-        boolean ans = isValidBST(root);
-        System.out.println(Integer.MAX_VALUE + " " + Integer.MIN_VALUE);
-        System.out.println(ans);
-    }
-
 
     // validate bst
     // iterative :-
@@ -232,7 +220,7 @@ public class BST {
         return isValidBSTHelper(node.left, min, node.val) && isValidBSTHelper(node.right, node.val, max);
     }
 
-    private class TreeNode {
+    class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;

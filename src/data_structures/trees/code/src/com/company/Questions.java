@@ -193,9 +193,8 @@ public class Questions {
 
     // BFS
     public int minDepth2(TreeNode root) {
-        if (root == null) {
-            return 0;
-        }
+        if (root == null) return 0;
+
         Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
         int level = 1;
@@ -306,12 +305,12 @@ public class Questions {
         if (root == null) return null;
         queue.add(root);
         while (!queue.isEmpty()) {
-            TreeNode pop = queue.poll();
-            if (pop.left != null) queue.add(pop.left);
-            if (pop.right != null) queue.add(pop.right);
-            TreeNode l = pop.left;
-            pop.left = pop.right;
-            pop.right = l;
+            TreeNode node = queue.poll();
+            if (node.left != null) queue.add(node.left);
+            if (node.right != null) queue.add(node.right);
+            TreeNode l = node.left;
+            node.left = node.right;
+            node.right = l;
         }
         return root;
     }
@@ -388,15 +387,11 @@ public class Questions {
 
     // string (inefficient)
     public void binaryTreePathsHelper(String path, List<String> list, TreeNode node) {
-        if (node.left == null && node.right == null) {
-            list.add(path + node.val);
-        }
-        if (node.left != null) {
-            binaryTreePathsHelper(path + node.val + "->", list, node.left);
-        }
-        if (node.right != null) {
-            binaryTreePathsHelper(path + node.val + "->", list, node.right);
-        }
+        if (node.left == null && node.right == null) list.add(path + node.val);
+
+        if (node.left != null) binaryTreePathsHelper(path + node.val + "->", list, node.left);
+
+        if (node.right != null) binaryTreePathsHelper(path + node.val + "->", list, node.right);
     }
 
 
@@ -479,13 +474,12 @@ public class Questions {
         lowestCommonAncestorHelper(root, p.val, a);
         List<TreeNode> b = new ArrayList<>();
         lowestCommonAncestorHelper(root, q.val, b);
-        TreeNode ans = root;
         for (int i = a.size() - 1; i >=0  ; i--) {
             for (int j = b.size()-1; j >= 0  ; j--) {
                 if (a.get(i).val == b.get(j).val) return a.get(i);
             }
         }
-        return ans;
+        return root;
     }
 
     // helper for solution 1 (bruteforce solution)
