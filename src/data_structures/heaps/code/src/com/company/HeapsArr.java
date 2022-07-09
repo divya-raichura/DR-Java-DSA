@@ -140,7 +140,7 @@ public class HeapsArr {
             downheap(i);
         }
     }
- 
+
     public int[] heapsort() {
         int[] nums = new int[this.size];
         for (int i = 0; i < nums.length; i++) {
