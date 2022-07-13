@@ -53,23 +53,23 @@ public class Heap<T extends Comparable<T>> {
 
     private void downheap(int index) {
 
-        int max = index;
+        int min = index;
         int left = left(index);
         int right = right(index);
 
         // check is left < min
-        if (left < list.size() && list.get(max).compareTo(list.get(left)) > 0) {
-            max = left;
+        if (left < list.size() && list.get(min).compareTo(list.get(left)) > 0) {
+            min = left;
         }
         // check if right < min
-        if (right < list.size() && list.get(max).compareTo(list.get(right)) > 0) {
-            max = right;
+        if (right < list.size() && list.get(min).compareTo(list.get(right)) > 0) {
+            min = right;
         }
 
-        if (max != index) {
-            swap(max, index);
+        if (min != index) {
+            swap(min, index);
 
-            downheap(max);
+            downheap(min);
         }
     }
 

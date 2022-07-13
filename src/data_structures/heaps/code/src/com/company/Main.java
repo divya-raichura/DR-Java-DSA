@@ -4,6 +4,7 @@ import com.company.nice.Heap;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 
 public class Main {
 
@@ -23,14 +24,14 @@ public class Main {
         System.out.println("heapsort: "+heap.heapSort());
         System.out.println();
         HeapsArr my = new HeapsArr();
-        my.insert(50);
-        my.insert(30);
-        my.insert(20);
-        my.insert(15);
-        my.insert(10);
+        my.iterativeInsert(50);
+        my.iterativeInsert(30);
+        my.iterativeInsert(20);
+        my.iterativeInsert(15);
+        my.iterativeInsert(10);
         my.insert(8);
-        my.insert(16);
-        my.insert(60);
+        my.iterativeInsert(16);
+        my.iterativeInsert(60);
         my.display();
         my.remove();
         my.display();
