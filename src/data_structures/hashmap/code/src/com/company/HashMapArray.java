@@ -44,6 +44,12 @@ public class HashMapArray<K, V> {
         }
     }
 
+    // tells which bucket to go to
+    private int hashFunction(K key) {
+        int hc = key.hashCode();
+        return Math.abs(hc) % buckets.length; // or directly Math.abs(key.hashCode() % buckets.length)
+    }
+
     private void reHash() {
         System.out.println("Rehashing!");
         LinkedList<Node>[] old = buckets;
@@ -106,12 +112,6 @@ public class HashMapArray<K, V> {
 
     public boolean containsKey(K key) {
         return get(key) != null;
-    }
-
-    // tells which bucket to go to
-    private int hashFunction(K key) {
-        int hc = key.hashCode();
-        return Math.abs(hc) % buckets.length; // or directly Math.abs(key.hashCode() % buckets.length)
     }
 
     public class Node {
