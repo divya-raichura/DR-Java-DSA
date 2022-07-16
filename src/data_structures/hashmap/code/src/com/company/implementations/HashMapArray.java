@@ -1,4 +1,4 @@
-package com.company;
+package com.company.implementations;
 
 import java.util.LinkedList;
 
@@ -28,7 +28,7 @@ public class HashMapArray<K, V> {
     public void put(K key, V value) {
         int bucketIndex = hashFunction(key);
         LinkedList<Node> nodes = buckets[bucketIndex];
-        for (Node node : nodes) { // if key present, update
+        for (Node node : nodes) { // if key present => update
             if (node.key.equals(key)) {
                 node.value = value;
                 return;
