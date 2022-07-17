@@ -1,6 +1,6 @@
-package com.company.practice;
+package com.company.practiceGenericPQ;
 
-import com.company.GenericPQ;
+import com.company.implementations.GenericPQ;
 
 public class Main {
 

@@ -1,9 +1,9 @@
-package com.company.questions;
+package com.company.PQquestions.newQ;
 
 import java.util.PriorityQueue;
 import java.util.Scanner;
 
-public class KSortedArr {
+public class KSortedArrMethod2 {
     public static void main(String[] args) {
 
 //        k space and n(logk) complexity

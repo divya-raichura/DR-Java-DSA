@@ -1,4 +1,4 @@
-package com.company.practice;
+package com.company.practiceGenericPQ;
 
 public class Student implements Comparable<Student> {
     int rno;
