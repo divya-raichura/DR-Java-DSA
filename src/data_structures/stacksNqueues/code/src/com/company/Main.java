@@ -1,5 +1,9 @@
 package com.company;
 
+import com.company.stack.CustomStack;
+import com.company.stack.DynamicStack;
+import com.company.stack.StackException;
+
 public class Main {
     public static void main(String[] args) throws StackException {
         CustomStack stack = new DynamicStack();

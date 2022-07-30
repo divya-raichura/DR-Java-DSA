@@ -10,8 +10,10 @@ public class DynamicQueue extends CircularQueue {
         if (this.isFull()) {
             int[] temp = new int[arr.length * 2];
             for (int i = 0; i < arr.length; i++) {
-                temp[i] = arr[(front + i) % arr.length];
+                temp[i] = arr[(front+i) % arr.length];
             }
+            super.front = 0;
+            super.end = arr.length;
             arr = temp;
         }
         super.insert(n);
