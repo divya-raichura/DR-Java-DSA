@@ -1,11 +1,11 @@
-package src.algos.sorting.quick_sort;
+// package src.algos.sorting.quick_sort;
 
 import java.util.Arrays;
 
 // https://www.youtube.com/watch?v=0SkOjNaO1XY&ab_channel=CSDojo
 public class QSpreferred {
     public static void main(String[] args) {
-        int[] arr = {5, 0, 21, 45, -24};
+        int[] arr = {5, 0, 21, 45, 24};
         qs(arr, 0, arr.length - 1);
         System.out.println(Arrays.toString(arr));
     }

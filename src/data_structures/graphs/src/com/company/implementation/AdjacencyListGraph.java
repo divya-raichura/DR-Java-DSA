@@ -11,7 +11,9 @@ public class AdjacencyListGraph<T> {
     }
 
     public void addVertex(T value) {
-        vertices.add(new Vertex(value));
+        if (!vertices.contains(value)) {
+            vertices.add(new Vertex(value));
+        }
     }
 
     public void addEdge(T first, T second) {
@@ -50,7 +52,8 @@ public class AdjacencyListGraph<T> {
         while (!stack.isEmpty()) {
             Vertex top = stack.pop();
             System.out.print(top.value + " ");
-            if (top.value.equals(value)) return true;
+            if (top.value.equals(value))
+                return true;
 
             for (Vertex neighbour : top.neighbours) {
                 if (!visited.contains(neighbour)) {
@@ -81,7 +84,8 @@ public class AdjacencyListGraph<T> {
             Vertex front = queue.remove();
 
             System.out.print(front.value + " ");
-            if (front.value.equals(value)) return true;
+            if (front.value.equals(value))
+                return true;
 
             for (Vertex neighbour : front.neighbours) {
                 if (!visited.contains(neighbour)) {
@@ -106,7 +110,8 @@ public class AdjacencyListGraph<T> {
         LinkedList<LinkedList<Vertex>> list = new LinkedList<>();
 
         for (Vertex vertex : vertices) {
-            if (visited.contains(vertex)) continue;
+            if (visited.contains(vertex))
+                continue;
             visited.add(vertex);
             queue.add(vertex);
 
@@ -128,10 +133,6 @@ public class AdjacencyListGraph<T> {
         return list;
     }
 
-    public boolean bipartite() {
-        
-    }
-
     private Vertex get(T value) {
         for (Vertex vertex : vertices) {
             if (vertex.value.equals(value)) {
@@ -150,6 +151,5 @@ public class AdjacencyListGraph<T> {
             this.neighbours = new LinkedList<>();
         }
     }
-
 
 }
