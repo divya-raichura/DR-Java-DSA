@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/data_structures.iml" filepath="$PROJECT_DIR$/data_structures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/graphs/graphs.iml" filepath="$PROJECT_DIR$/graphs/graphs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hashmap/hashmap.iml" filepath="$PROJECT_DIR$/hashmap/hashmap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/heaps/heaps.iml" filepath="$PROJECT_DIR$/heaps/heaps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/heaps_hashmap_questions/heaps_hashmap_questions.iml" filepath="$PROJECT_DIR$/heaps_hashmap_questions/heaps_hashmap_questions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/linkedlist/linkedlist.iml" filepath="$PROJECT_DIR$/linkedlist/linkedlist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stacksNqueues/stacksNqueues.iml" filepath="$PROJECT_DIR$/stacksNqueues/stacksNqueues.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trees/trees.iml" filepath="$PROJECT_DIR$/trees/trees.iml" />
+    </modules>
+  </component>
+</project>
