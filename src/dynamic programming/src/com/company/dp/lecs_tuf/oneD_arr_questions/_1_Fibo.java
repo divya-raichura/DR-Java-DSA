@@ -1,8 +1,8 @@
-package com.company.fibo_1D_array_questions;
+package com.company.dp.lecs_tuf.oneD_arr_questions;
 
 import java.util.Arrays;
 
-public class Fibo_1 {
+public class _1_Fibo {
     public static void main(String[] args) {
         int n = 7;
 
@@ -15,7 +15,7 @@ public class Fibo_1 {
         System.out.println(memo(n, dp));
 
         // tabulation
-        System.out.println(tabulation(n, dp));
+        System.out.println(tabulation(n));
 
         // space optimised tabulation
         System.out.println(spaceOptimised(n));
@@ -40,9 +40,9 @@ public class Fibo_1 {
         return ans;
     }
 
-    public static int tabulation(int n, int[] dp) {
+    public static int tabulation(int n) {
         if(n <= 1) return n;
-        dp = new int[n + 1];
+        int[] dp = new int[n + 1];
         Arrays.fill(dp, -1);
         dp[0] = 0;
         dp[1] = 1;

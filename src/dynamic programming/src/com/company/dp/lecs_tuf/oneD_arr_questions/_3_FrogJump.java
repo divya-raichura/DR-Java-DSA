@@ -1,10 +1,8 @@
-package com.company.fibo_1D_array_questions;
+package com.company.dp.lecs_tuf.oneD_arr_questions;
 
-import java.net.Inet4Address;
 import java.util.Arrays;
-import java.util.Scanner;
 
-public class FrogJump_3 {
+public class _3_FrogJump {
 
     public static void main(String[] args) {
         int[] arr = {10, 20, 30, 10};

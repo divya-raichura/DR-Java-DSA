@@ -1,8 +1,8 @@
-package com.company.fibo_1D_array_questions;
+package com.company.dp.lecs_tuf.oneD_arr_questions;
 
 import java.util.Arrays;
 
-public class FrogJump_4 {
+public class _4_FrogJump {
     public static void main(String[] args) {
         int[] arr = {10, 20, 30, 10};
         int[] arr2 = {30, 10, 60, 10, 60, 50};
@@ -30,7 +30,7 @@ public class FrogJump_4 {
         for (int i = 1; i < arr.length; i++) {
             int min = Integer.MAX_VALUE;
             for (int j = 1; j <= k; j++) {
-                if (i - j >= 0) {
+                if (i >= j) { // i - j >= 0
                     int ans = dp[i - j] + Math.abs(arr[i] - arr[i - j]);
                     min = Math.min(ans, min);
                 } else {
@@ -51,7 +51,7 @@ public class FrogJump_4 {
         int min = Integer.MAX_VALUE;
 
         for (int j = 1; j <= k; j++) {
-            if(i - j >= 0) {
+            if(i >= j) {
                 int ans = jumpMemo(arr, dp, i - j, k) + Math.abs(arr[i] - arr[i - j]);
                 min = Math.min(min, ans);
             } else {
@@ -68,7 +68,7 @@ public class FrogJump_4 {
         int min = Integer.MAX_VALUE;
 
         for (int j = 1; j <= k; j++) {
-            if(i - j >= 0) {
+            if(i >= j) {
                 int ans = jump(arr, i - j, k) + Math.abs(arr[i] - arr[i - j]);
                 min = Math.min(min, ans);
             } else {
