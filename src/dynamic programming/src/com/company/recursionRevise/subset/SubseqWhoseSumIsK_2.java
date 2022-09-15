@@ -11,8 +11,7 @@ public class SubseqWhoseSumIsK_2 {
 
 //        printSum(arr, 0, new ArrayList<>(), 2, 0);
 
-        int ans = printSumCount(arr, 0, new ArrayList<>(), target, 0);
-        System.out.println(ans);
+        printSum(arr, 0, new ArrayList<>(), target, 0);
     }
 
     static void printSum(int[] arr, int i, ArrayList<Integer> list, int target, int sum) {

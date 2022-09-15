@@ -14,7 +14,7 @@ public class Knapsack {
 //        System.out.println(knapsack(wt, val, w, wt.length));
 
         // memo
-        System.out.println(knapSack2(w, wt, val, wt.length));
+        System.out.println(memoization(w, wt, val, wt.length));
 
         // tabulation or bottom up or iterative
 //        System.out.println(tabulation(wt, val, wt.length, w));
@@ -38,21 +38,21 @@ public class Knapsack {
     }
 
     // memoization
-    static int knapSack2(int w, int[] wt, int[] val, int n)
+    static int memoization(int w, int[] wt, int[] val, int n)
     {
         int[][] dp = new int[n+1][w+1];
         for (int[] arr : dp) {
             Arrays.fill(arr, -1);
         }
 
-        int ans = knap(w, wt, val, n, dp);
+        int ans = memoization(w, wt, val, n, dp);
         for (int[] arr : dp) {
             System.out.println(Arrays.toString(arr));
         }
         return ans;
     }
 
-    static int knap(int w, int[] wt, int[] val, int n, int[][] dp) {
+    static int memoization(int w, int[] wt, int[] val, int n, int[][] dp) {
 
         if(n == 0 || w == 0) {
             return 0;
@@ -63,11 +63,11 @@ public class Knapsack {
 
         if(wt[n-1] <= w) {
             // pick or not pick
-            return dp[n][w] = Math.max(val[n - 1] + knap(w - wt[n - 1], wt, val, n - 1, dp), knap(w, wt, val, n - 1, dp));
+            return dp[n][w] = Math.max(val[n - 1] + memoization(w - wt[n - 1], wt, val, n - 1, dp), memoization(w, wt, val, n - 1, dp));
         } else {
             // not possible to put in sack
             //  (wt[n - 1] > w)
-            return dp[n][w] = knap(w, wt, val, n - 1, dp);
+            return dp[n][w] = memoization(w, wt, val, n - 1, dp);
         }
     }
 
