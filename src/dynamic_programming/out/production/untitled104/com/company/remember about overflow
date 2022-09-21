@@ -1,9 +1,0 @@
-whenever returning int max or int min, make sure to not add arr[i] + rec()
-it will lead to overflow ie int max + even a small value => negative value
-so math.min() will give wrong ans
-
-eg : min path sum
-
-
-note that "only when returning int max or int min"
-like in question knapsack we are not returning hence it is ok to add arr[i]
