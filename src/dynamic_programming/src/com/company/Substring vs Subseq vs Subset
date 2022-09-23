@@ -1,0 +1,9 @@
+subseq :
+not continuous but maintains order eg if x: abcde then subseq can be ace
+but not aec
+
+subset
+not continuous + may not maintain order
+
+substring or sub-array:
+must be continuous and maintain order

@@ -1,11 +1,11 @@
-package com.company.dp.lecs_tuf.T4_subseqStrings;
+package com.company.dp.lecs_tuf.T4_strings;
 
 import java.util.Arrays;
 
-public class L26_PrintSubseq {
+public class L26_PrintLCS {
     public static void main(String[] args) {
-        String one = "abcde";
-        String two = "ace";
+        String one = "horse";
+        String two = "ros";
         System.out.println(rec(one, two , one.length(), two.length()));
         System.out.println(tabulation(one, two));
         System.out.println(tabulationAnotherApproach(one, two));

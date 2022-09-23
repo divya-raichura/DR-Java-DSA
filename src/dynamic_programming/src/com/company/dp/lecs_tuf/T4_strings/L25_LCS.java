@@ -1,11 +1,13 @@
-package com.company.dp.lecs_tuf.T4_subseqStrings;
+package com.company.dp.lecs_tuf.T4_strings;
 
 import java.util.Arrays;
 
 // https://leetcode.com/problems/longest-common-subsequence/submissions/
-public class L25_LongestSubseq {
+public class L25_LCS {
     public static void main(String[] args) {
-
+        String one = "led";
+        String two = "lcd";
+        System.out.println(tabulation(one, two));
     }
 
     static int rec(String s1, String s2) {
