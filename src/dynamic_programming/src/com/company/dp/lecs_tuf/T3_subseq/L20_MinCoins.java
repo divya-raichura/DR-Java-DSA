@@ -82,7 +82,65 @@ public class L20_MinCoins {
                 dp[i][j] = Math.min(take, notTake);
             }
         }
-        return dp[dp.length - 1][dp.length - 1];
+        int ans = dp[dp.length - 1][tar];
+        if(ans == Integer.MAX_VALUE) return -1;
+        else return ans;
+    }
+
+    static int spaceOpt(int[] arr, int tar) {
+        int[] prev = new int[tar + 1];
+        int[] curr = new int[tar + 1];
+
+        for (int i = 0; i < tar + 1; i++) {
+            if (i % arr[0] == 0) {
+                prev[i] = i / arr[0];
+            } else {
+                prev[i] = Integer.MAX_VALUE;
+            }
+        }
+
+        for (int i = 1; i < arr.length; i++) {
+            for (int j = 0; j < tar + 1; j++) {
+                int notTake = prev[j];
+                int take = Integer.MAX_VALUE;
+                if (j - arr[i] >= 0) {
+                    take = curr[j - arr[i]];
+                    if (take != Integer.MAX_VALUE) take += 1;
+                }
+                curr[j] = Math.min(take, notTake);
+            }
+            prev = curr;
+        }
+        int ans = prev[tar];
+        if(ans == Integer.MAX_VALUE) return -1;
+        else return ans;
+    }
+
+    static int spaceOpt1DArray(int[] arr, int tar) {
+        int[] prev = new int[tar + 1];
+
+        for (int i = 0; i < tar + 1; i++) {
+            if (i % arr[0] == 0) {
+                prev[i] = i / arr[0];
+            } else {
+                prev[i] = Integer.MAX_VALUE;
+            }
+        }
+
+        for (int i = 1; i < arr.length; i++) {
+            for (int j = 0; j < tar + 1; j++) {
+                int notTake = prev[j];
+                int take = Integer.MAX_VALUE;
+                if (j - arr[i] >= 0) {
+                    take = prev[j - arr[i]];
+                    if (take != Integer.MAX_VALUE) take += 1;
+                }
+                prev[j] = Math.min(take, notTake);
+            }
+        }
+        int ans = prev[tar];
+        if(ans == Integer.MAX_VALUE) return -1;
+        else return ans;
     }
 
 }

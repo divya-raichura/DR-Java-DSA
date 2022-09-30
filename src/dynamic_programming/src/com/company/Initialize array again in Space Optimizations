@@ -1,0 +1,5 @@
+// v imp to initialize curr as a new array
+// after every iteration, cause in java reference is shared by objects and
+// array is an object, so to avoid errors we should initialize curr again
+// after every iteration, it may work sometimes without initializing again
+// depending upon what the algo is doing

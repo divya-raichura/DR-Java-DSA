@@ -42,7 +42,13 @@ public class L22_Coin2 {
         }
 
         for (int i = 1; i < arr.length; i++) {
-            int[] curr = new int[tar + 1];
+            int[] curr = new int[tar + 1]; // v imp to initialize curr as a new array
+            // after every iteration, cause in java reference is shared by objects and
+            // array is an object, so to avoid errors we should initialize curr again
+            // after every iteration, it may work sometimes without initializing again
+            // depending upon what the algo is doing
+
+            // so if we are using
             curr[0] = 1;
             for (int j = 1; j < tar + 1; j++) {
                 int notTake = prev[j];
@@ -53,6 +59,28 @@ public class L22_Coin2 {
                 curr[j] = take + notTake;
             }
             prev = curr;
+        }
+        return prev[tar];
+    }
+
+    static int spaceOpt1DArray(int[] arr, int tar) {
+        int[] prev = new int[tar + 1];
+        for (int j = 0; j < tar + 1; j++) {
+            if (j % arr[0] == 0) {
+                prev[j] = 1;
+            }
+        }
+
+        for (int i = 1; i < arr.length; i++) {
+            for (int j = 1; j < tar + 1; j++) {
+                int notTake = prev[j];
+                int take = 0;
+                if (j - arr[i] >= 0) {
+                    take = prev[j - arr[i]];
+                }
+                prev[j] = take + notTake;
+            }
+            prev[0] = 1;
         }
         return prev[tar];
     }

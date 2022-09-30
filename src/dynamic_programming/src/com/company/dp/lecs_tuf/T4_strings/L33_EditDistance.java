@@ -7,46 +7,6 @@ public class L33_EditDistance {
 
     }
 
-    public int rec(String word1, String word2) {
-        return rec(word1, word2, word1.length(), word2.length());
-    }
-
-    public int rec(String word1, String word2, int i, int j) {
-        if (i == 0) return j;
-        if (j == 0) return i;
-
-        if (word1.charAt(i - 1) == word2.charAt(j - 1)) {
-            return rec(word1, word2, i - 1, j - 1);
-        }
-        int edit = rec(word1, word2, i - 1, j - 1);
-        int delete = rec(word1, word2, i - 1, j);
-        int insert = rec(word1, word2, i, j - 1);
-        int min = Math.min(insert, Math.min(edit, delete));
-        return 1 + min;
-    }
-
-    public int memo(String word1, String word2) {
-        int[][] dp = new int[word1.length() + 1][word2.length() + 1];
-        for (int[] arr : dp) {
-            Arrays.fill(arr, -1);
-        }
-        return memo(word1, word2, word1.length(), word2.length(), dp);
-    }
-
-    public int memo(String word1, String word2, int i, int j, int[][] dp) {
-        if (i == 0) return j;
-        if (j == 0) return i;
-        if (dp[i][j] != -1) return dp[i][j];
-        if (word1.charAt(i - 1) == word2.charAt(j - 1)) {
-            return dp[i][j] = memo(word1, word2, i - 1, j - 1, dp);
-        }
-        int edit = memo(word1, word2, i - 1, j - 1, dp);
-        int delete = memo(word1, word2, i - 1, j, dp);
-        int insert = memo(word1, word2, i, j - 1, dp);
-        int min = Math.min(insert, Math.min(edit, delete));
-        return dp[i][j] = 1 + min;
-    }
-
     static int tabulation(String word1, String word2) {
         int[][] dp = new int[word1.length() + 1][word2.length() + 1];
 
@@ -91,6 +51,48 @@ public class L33_EditDistance {
             prev = curr;
         }
         return prev[word2.length()];
+    }
+
+    public int rec(String word1, String word2) {
+        return rec(word1, word2, word1.length(), word2.length());
+    }
+
+    public int rec(String word1, String word2, int i, int j) {
+        if (i == 0) return j;
+        if (j == 0) return i;
+
+        if (word1.charAt(i - 1) == word2.charAt(j - 1)) {
+            return rec(word1, word2, i - 1, j - 1);
+        } else {
+            int edit = rec(word1, word2, i - 1, j - 1);
+            int delete = rec(word1, word2, i - 1, j);
+            int insert = rec(word1, word2, i, j - 1);
+            int min = Math.min(insert, Math.min(edit, delete));
+            return 1 + min;
+        }
+    }
+
+    public int memo(String word1, String word2) {
+        int[][] dp = new int[word1.length() + 1][word2.length() + 1];
+        for (int[] arr : dp) {
+            Arrays.fill(arr, -1);
+        }
+        return memo(word1, word2, word1.length(), word2.length(), dp);
+    }
+
+    public int memo(String word1, String word2, int i, int j, int[][] dp) {
+        if (i == 0) return j;
+        if (j == 0) return i;
+        if (dp[i][j] != -1) return dp[i][j];
+        if (word1.charAt(i - 1) == word2.charAt(j - 1)) {
+            return dp[i][j] = memo(word1, word2, i - 1, j - 1, dp);
+        } else {
+            int edit = memo(word1, word2, i - 1, j - 1, dp);
+            int delete = memo(word1, word2, i - 1, j, dp);
+            int insert = memo(word1, word2, i, j - 1, dp);
+            int min = Math.min(insert, Math.min(edit, delete));
+            return dp[i][j] = 1 + min;
+        }
     }
     // can't optimise to 1d array because edit and delete depend on prev but insert is depending upon curr
     // so both arrays are required
