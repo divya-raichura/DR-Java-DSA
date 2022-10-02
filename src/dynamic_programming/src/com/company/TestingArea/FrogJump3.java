@@ -1,4 +1,4 @@
-package com.company.myPractice;
+package com.company.TestingArea;
 
 public class FrogJump3 {
     public static void main(String[] args) {

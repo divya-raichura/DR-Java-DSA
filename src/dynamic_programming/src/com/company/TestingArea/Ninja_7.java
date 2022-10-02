@@ -1,4 +1,4 @@
-package com.company.myPractice;
+package com.company.TestingArea;
 
 import java.util.Arrays;
 
