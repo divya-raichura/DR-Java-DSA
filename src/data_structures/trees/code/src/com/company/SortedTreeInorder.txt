@@ -1,0 +1,1 @@
+in order traversal of a bst gives a sorted list
