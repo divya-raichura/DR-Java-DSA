@@ -5,7 +5,8 @@ import java.util.List;
 
 public class Questions {
 
-
+//     merge sort in linked list:-
+// https://www.youtube.com/watch?v=pNTc1bM1z-4&ab_channel=NickWhite
 
     public Node recursionInsert(int val, int index, Node node) {
         if (index == 0) {
