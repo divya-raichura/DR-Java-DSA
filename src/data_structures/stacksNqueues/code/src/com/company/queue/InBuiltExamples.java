@@ -1,4 +1,4 @@
-package com.company;
+package src.data_structures.stacksNqueues.code.src.com.company.queue;
 
 import java.util.*;
 
