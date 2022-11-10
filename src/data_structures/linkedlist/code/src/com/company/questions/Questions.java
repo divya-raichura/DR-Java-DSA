@@ -5,7 +5,8 @@ import java.util.List;
 
 public class Questions {
 
-
+//     merge sort in linked list:-
+// https://www.youtube.com/watch?v=pNTc1bM1z-4&ab_channel=NickWhite
 
     public Node recursionInsert(int val, int index, Node node) {
         if (index == 0) {
@@ -16,6 +17,23 @@ public class Questions {
         return node;
     }
 
+    public void removeDup() {
+        Node temp = head;
+        while (temp != null) {
+            if (temp.next != null && temp.next.data == temp.data) {
+                int dup = temp.next.data;
+                Node dupTemp = temp.next;
+                while (dupTemp != null && dupTemp.data == dup) {
+                    dupTemp = dupTemp.next;
+                    size--;
+                }
+                temp.next = dupTemp;
+                temp = dupTemp;
+            } else {
+                temp = temp.next;
+            }
+        }
+    }
 
     public ListNode deleteDuplicates2(ListNode head) {
         if (head == null || head.next == null) return head;
