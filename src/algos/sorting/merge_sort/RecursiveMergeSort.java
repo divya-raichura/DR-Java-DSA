@@ -2,7 +2,7 @@ package src.algos.sorting.merge_sort;
 
 import java.util.Arrays;
 
-public class CleanRecMs_DoThisForNormal {
+public class RecursiveMergeSort {
     public static void main(String[] args) {
         int[] arr = {8, 4, 5, 1, 3, -12, 0, -124};
 //        int[] arr = {8, 4, 5, 1, 3, 2};
