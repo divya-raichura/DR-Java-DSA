@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 // BEST
 
-public class MyTry_DoThisForInplace {
+public class InplaceMergeSort {
     public static void main(String[] args) {
         int[] arr = {4,5,6,7,8,9};
         sort(arr, 0, arr.length - 1);
