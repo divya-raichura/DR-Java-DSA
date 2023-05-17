@@ -12,7 +12,7 @@ public class InplaceMergeSort {
     }
 
     static void sort(int[] arr, int s, int e) {
-        if (e >= s) {
+        if (e > s) {
             int m = (s + e) / 2;
             sort(arr, s, m);
             sort(arr, m + 1, e);
